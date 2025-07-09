@@ -1,1 +1,2 @@
+To deleted a specific file created by terraform use the command    terraform destroy -target=aws_instance.instance_name
 
