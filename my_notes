@@ -1,2 +1,39 @@
 To deleted a specific file created by terraform use the command    terraform destroy -target=aws_instance.instance_name
 
+terraform-project/
+├── envs/
+│   ├── dev/
+│   │   └── main.tf
+│   │   └── variables.tf
+│   │   └── terraform.tfvars
+│   ├── staging/
+│   │   └── main.tf
+│   │   └── variables.tf
+│   │   └── terraform.tfvars
+│   └── prod/
+│       └── main.tf
+│       └── variables.tf
+│       └── terraform.tfvars
+│
+├── modules/
+│   ├── ec2/
+│   │   └── main.tf
+│   │   └── variables.tf
+│   │   └── outputs.tf
+│   ├── vpc/
+│   │   └── main.tf
+│   │   └── variables.tf
+│   │   └── outputs.tf
+│   └── s3/
+│       └── main.tf
+│       └── variables.tf
+│       └── outputs.tf
+│
+├── backend/
+│   └── backend.tf        # Remote state config (e.g., S3 + DynamoDB)
+│
+├── versions.tf           # Provider and Terraform version constraints
+├── README.md             # Project documentation
+└── .gitignore            # Ignore terraform.tfstate*, .terraform/, etc.
+
+
