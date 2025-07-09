@@ -3,6 +3,7 @@ terraform show                                           # To see the statefile 
 terraform  apply
 terraform plan
 terraform destroy
+# first create resources and then next apply the backend.tf 
 
 terraform-project/
 ├── envs/
@@ -40,4 +41,6 @@ terraform-project/
 ├── README.md             # Project documentation
 └── .gitignore            # Ignore terraform.tfstate*, .terraform/, etc.
 
+/*jodshflsdfhs
+ldjhfshj */
 
