@@ -1,4 +1,8 @@
-To deleted a specific file created by terraform use the command    terraform destroy -target=aws_instance.instance_name
+terraform destroy -target=aws_instance.instance_name     # To deleted a specific file created by terraform use the command
+terraform show                                           # To see the statefile use command
+terraform  apply
+terraform plan
+terraform destroy
 
 terraform-project/
 ├── envs/
