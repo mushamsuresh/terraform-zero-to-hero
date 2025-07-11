@@ -74,3 +74,7 @@ Certainly, let's delve deeper into the `file`, `remote-exec`, and `local-exec` p
    ```
 
    In this example, a `null_resource` is used with a `local-exec` provisioner to run a simple local command that echoes a message to the console whenever Terraform is applied or refreshed. The `timestamp()` function ensures it runs each time.
+
+Public key: It is stored in Ec2 instance. It is used to upload a file from terraform to ec2 instance
+Private key: It is downloaded in the local machine. It is used to connect with the ec2 from terraform / local machine for authentication. 
+```private key is never uploaded in terraform or GitHub but we only provide the path of private key in terraform```
