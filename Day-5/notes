@@ -1,0 +1,2 @@
+Generated keypair using windows powershell command
+```ssh-keygen -t rsa -b 4096 -f "C:\Users\sures\OneDrive\Desktop\Devops notes\terrafom practice\SSH key_pair\my_terraform_key"```
