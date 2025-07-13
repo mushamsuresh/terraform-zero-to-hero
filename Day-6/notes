@@ -1,0 +1,19 @@
+📁 Terraform Workspaces Project Tree Diagram
+your-terraform-project/
+├── main.tf
+├── variables.tf
+├── terraform.tfvars      # Common variables (like AMI)
+├── terraform.lock.hcl
+├── .terraform/           # Local Terraform backend data (auto-created)
+│   └── environment-specific state info
+├── modules/
+│   └── ec2_instance/
+│       ├── main.tf
+│       └── variables.tf
+└── workspaces/
+    ├── dev/
+    │   └── terraform.tfstate        # auto-created state file
+    ├── stage/
+    │   └── terraform.tfstate
+    └── prod/
+        └── terraform.tfstate
