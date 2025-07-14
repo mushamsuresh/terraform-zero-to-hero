@@ -17,3 +17,6 @@ your-terraform-project/
     │   └── terraform.tfstate
     └── prod/
         └── terraform.tfstate
+-------------------------------------------------------------------------------
+since we are using instance_type = map(string)  in variale.tf file change the instance_type = var.instance_type[terraform.workspace]
+or we can use this instance_type = lookup(var.instance_type,terraform.workspace,"t2.micro")
