@@ -70,7 +70,7 @@ ssh -i "C:\Users\sures\OneDrive\Desktop\Devops notes\terrafom practice\SSH key_p
 ```
 
 ---
-
+Another method: Without keypair we cannot SSH to ec2 instance. While creating instance create a keypair, and download the private key. Now in windows powershell point to the path to which you have downloaded.  Now use option connect in aws ssh and copy the path and  paste. It will connect to ec2.
 ## 🧪 5. Verify Uploaded File
 
 Once connected to the instance:
